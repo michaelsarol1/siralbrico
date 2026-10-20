@@ -1,0 +1,115 @@
+#about .page-header {
+    width: 100%;
+    text-align: center;
+    padding: 4px 0 8px;
+}
+
+#about .page-header h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-size: clamp(26px, 4vw, 36px);
+    margin-bottom: 8px;
+}
+
+#about .page-header p {
+    font-size: 15px;
+    color: var(--muted);
+}
+
+#about .page-card {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid rgba(16, 32, 24, 0.06);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(22px, 4vw, 36px);
+}
+
+#about .lead-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #31433b;
+    margin-bottom: 28px;
+}
+
+#about .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+#about .feature-box {
+    background: linear-gradient(180deg, #f7fbf8 0%, #eef6f1 100%);
+    border: 1px solid rgba(11, 122, 88, 0.12);
+    border-top: 3px solid var(--court);
+    border-radius: 14px;
+    padding: 20px 18px;
+}
+
+#about .box-icon {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--court);
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+}
+
+#about .feature-box h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+#about .feature-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+#about .cta-banner {
+    background: linear-gradient(120deg, var(--court) 0%, var(--court-deep) 100%);
+    color: white;
+    padding: 22px clamp(16px, 3vw, 28px);
+    border-radius: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#about .cta-banner h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+#about .cta-banner p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+#about .cta-banner .button {
+    background: #fff;
+    color: var(--court-deep);
+    box-shadow: none;
+}
+
+#about .cta-banner .button:hover {
+    background: #f3f7f4;
+}
+
+@media (max-width: 820px) {
+    #about .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    #about .page-header h1 {
+        overflow-wrap: anywhere;
+        padding-inline: 8px;
+    }
+}
